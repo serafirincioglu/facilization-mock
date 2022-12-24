@@ -1,0 +1,14 @@
+.section-seperator {
+    line-height: 5px;
+    background: #212121;
+    height: 0.02rem;
+    /* margin: 4rem 2rem; */
+}
+
+.home__page-banner {
+    height: 100vh; /*only for demo*/
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

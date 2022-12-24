@@ -1,0 +1,23 @@
+.home__page-services h1 {
+    font-size: 3rem;
+    line-height: 12px;
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 4rem 0;
+}
+
+.home__page-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(
+        0deg,
+        rgba(172, 190, 189, 0.43) 0%,
+        rgba(255, 255, 255, 0) 99%,
+        rgba(255, 255, 255, 0) 99.99%,
+        rgba(189, 222, 220, 1) 100%
+    );
+    padding-bottom: 4rem;
+}

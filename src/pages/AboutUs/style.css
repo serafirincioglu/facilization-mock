@@ -1,0 +1,9 @@
+.about_us_page .about_us_page-banner {
+    width: 100%;
+    height: 40vh;
+}
+
+.about_us_page .about_us_page-banner img {
+    width: 100%;
+    height: 100%;
+}

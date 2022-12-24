@@ -1,0 +1,36 @@
+.home__page-footer {
+    position: relative;
+    width: 100%;
+    background: #212121;
+    min-height: 100px;
+    padding: 4rem 0;
+}
+
+.home__page-footer h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+.home__page-footer p {
+    -webkit-transition: all 0.2s;
+    margin-top: 20px;
+    padding: 5px 0;
+    color: white;
+    font-size: 18px;
+}
+
+.home__page-footer a {
+    padding: 8px;
+    -webkit-transition: all 0.25s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home__page-footer a:hover {
+    letter-spacing: 0.1em;
+}
+
+.home__page-footer li {
+    padding: 0 16px;
+}

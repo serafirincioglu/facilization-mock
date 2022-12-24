@@ -1,0 +1,133 @@
+.home__page-news {
+    padding: 0 2rem;
+    position: sticky;
+    background: linear-gradient(
+        180deg,
+        rgba(208, 233, 212, 1) 0%,
+        rgba(185, 210, 189, 1) 0%,
+        rgba(255, 255, 255, 0) 87%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.home__page-news h1 {
+    font-size: 3rem;
+    line-height: 12px;
+    letter-spacing: 0.6rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    padding: 4rem 0;
+}
+
+.date__box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    border: 4px solid;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+.date__box .date__day {
+    font-size: 1em;
+    margin: 0 0 0.3em;
+    color: white;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+.blog-card {
+    padding: 30px;
+    position: relative;
+}
+
+.blog-card .date__box {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: 300ms ease-in-out;
+}
+
+.blog-card .blog-card__background,
+.blog-card .card__background--layer {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.blog-card .blog-card__background {
+    background: transparent;
+}
+
+.blog-card .card__background--wrapper {
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 65%);
+    position: relative;
+    overflow: hidden;
+    border-radius: calc(40 * 1px);
+}
+
+.blog-card .card__background--main {
+    height: 100%;
+    position: relative;
+    transition: 300ms ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-card .card__background--layer {
+    z-index: 0;
+    opacity: 0;
+    background: rgba(136, 135, 135, 0.345);
+    transition: 300ms ease-in-out;
+}
+
+.blog-card .blog-card__head {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-card .blog-card__info {
+    z-index: 10;
+    background: white;
+    padding: 20px 15px;
+    font-size: 1.5rem;
+    margin: 0 0 0.3em;
+    color: black;
+    line-height: 18px;
+    font-weight: 600;
+    border-bottom: 0.02rem solid;
+    border-left: 0.02rem solid;
+    border-radius: calc(40 * 1px);
+}
+
+.blog-card .blog-card__info h5 {
+    transition: 300ms ease-in-out;
+    margin-top: 0;
+}
+
+.blog-card:hover .date__box {
+    opacity: 1;
+    transform: scale(1.5);
+    background: #212121;
+}
+
+.blog-card:hover .card__background--layer {
+    opacity: 1;
+}
+
+.blog-card:hover .blog-card__info {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.news-background {
+    width: 100%;
+    height: 100%;
+}
