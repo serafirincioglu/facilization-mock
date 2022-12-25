@@ -1,5 +1,4 @@
-import React from 'react'
-import banner from '../../assests/about_us_page-banner.jpeg'
+import React, { useEffect, useState } from 'react'
 import './style.css';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -12,6 +11,7 @@ import Mission from '../../components/AboutUs/Mission';
 import Values from '../../components/AboutUs/Values';
 import Policies from '../../components/AboutUs/Policies';
 import { styled } from '@mui/material/styles';
+import PageWrapper from '../../components/GlobalComponents/PageWrapper';
 
 
 function TabPanel(props) {
@@ -72,15 +72,22 @@ const StyledTab = styled((props) => <Tab disableRipple {...props} />)(
         fontSize: '18px',
         fontWeight: '500',
         marginRight: theme.spacing(1),
-        color: 'black',
+        color: 'white',
         '&.Mui-selected': {
-            color: '#000',
+            color: 'red',
         },
         '&.Mui-focusVisible': {
-            backgroundColor: 'rgba(100, 95, 228, 0.32)',
+            backgroundColor: 'red',
         },
     }),
 );
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+        width
+    };
+}
 
 function AboutUs() {
 
@@ -90,15 +97,25 @@ function AboutUs() {
         setValue(newValue);
     };
 
-    return (
-        <section className="about_us_page">
-            <div className="about_us_page-banner">
-                <img src={banner} alt="banner" />
-            </div>
+    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
+    useEffect(() => {
+        function handleResize() {
+            setWindowDimensions(getWindowDimensions());
+            console.log("dime: ", getWindowDimensions())
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    return (
+        <PageWrapper children={
             <div className="about_us_page-list">
-                <Box sx={{ width: '100%', bgcolor: 'background.paper' }}>
-                    <StyledTabs value={value} onChange={handleChange} centered>
+                <Box sx={{ width: '100%', bgcolor: 'transparent' }}>
+
+                    <StyledTabs
+                        value={value} onChange={handleChange} centered>
                         <StyledTab label="About Us" {...a11yProps(0)} />
                         <StyledTab label="Profile" {...a11yProps(1)} />
                         <StyledTab label="Mission" {...a11yProps(2)} />
@@ -106,6 +123,7 @@ function AboutUs() {
                         <StyledTab label="Policies" {...a11yProps(4)} />
 
                     </StyledTabs>
+
 
                     <TabPanel value={value} index={0}>
                         <AboutUsTab />
@@ -124,8 +142,9 @@ function AboutUs() {
                     </TabPanel>
 
                 </Box>
-            </div>
-        </section>
+            </ div>
+
+        } />
     )
 }
 

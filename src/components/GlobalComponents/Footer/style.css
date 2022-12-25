@@ -13,24 +13,20 @@
 }
 
 .home__page-footer p {
-    -webkit-transition: all 0.2s;
-    margin-top: 20px;
-    padding: 5px 0;
+    margin-block-start: 0;
     color: white;
-    font-size: 18px;
+    transition: all 0.25s;
 }
 
 .home__page-footer a {
-    padding: 8px;
-    -webkit-transition: all 0.25s;
+    padding: 0 8px;
     cursor: pointer;
     text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: letter-spacing 0.2s;
 }
 
 .home__page-footer a:hover {
-    letter-spacing: 0.1em;
-}
-
-.home__page-footer li {
-    padding: 0 16px;
+    letter-spacing: 0.2rem;
 }

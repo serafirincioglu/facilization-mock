@@ -10,21 +10,19 @@ import './style.css';
 function Footer() {
     return (
         <footer className="home__page-footer">
-            <Grid container spacing={1} direction="row" justifyContent="center" alignItems="flex-start">
+            <Grid container rowSpacing={1} spacing={1} direction="row" justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} sm>
-                    <List>
-                        <ListItem alignItems="flex-start">
+                    <List alignItems="center">
+                        <ListItem>
                             <h3>About Us</h3>
                         </ListItem>
                         {AboutUs.map((item, index) => {
                             return <ListItem key={index} alignItems="flex-start">
-                                <a href={item.link}><p>{item.title}</p></a>
+                                <a href={item.link}>{item.title}</a>
                             </ListItem>
                         })}
                     </List>
                 </Grid>
-
-
                 <Grid item xs={12} sm>
                     <ListItem alignItems="flex-start">
                         <h3>Our Products</h3>
@@ -32,13 +30,11 @@ function Footer() {
                     <List>
                         {OurProducts.map((item, index) => {
                             return <ListItem key={index}>
-                                <a href={item.link}><p>{item.title}</p></a>
+                                <a href={item.link}>{item.title}</a>
                             </ListItem>
                         })}
                     </List>
                 </Grid>
-
-
                 <Grid item xs={12} sm>
                     <ListItem alignItems="flex-start">
                         <h3>Our Services</h3>
@@ -46,13 +42,11 @@ function Footer() {
                     <List>
                         {OurServices.map((item, index) => {
                             return <ListItem key={index}>
-                                <a href={item.link}><p>{item.title}</p></a>
+                                <a href={item.link}>{item.title}</a>
                             </ListItem>
                         })}
                     </List>
                 </Grid>
-
-
                 <Grid item xs={12} sm>
                     <ListItem alignItems="flex-start">
                         <h3>Contact Us</h3>
@@ -69,15 +63,9 @@ function Footer() {
                                 <br />
                                 <span>+355 4 2256006</span>
                             </p>
-
                         </ListItem>
-
-
                     </List>
                 </Grid>
-
-
-
             </Grid>
         </footer>
 

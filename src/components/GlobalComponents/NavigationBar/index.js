@@ -6,6 +6,7 @@ function NavigationBar() {
 
     const [openNav, setOpenNav] = useState(false);
     const [navBar, setNavBar] = useState(false);
+    const [clickZeroX, setClickZeroX] = useState(false);
 
     useEffect(() => {
         let navClass = document.getElementById("navT");
@@ -25,8 +26,23 @@ function NavigationBar() {
 
 
 
+    useEffect(() => {
+        let navClass = document.getElementById("navT");
+
+        if (window.scrollY < 8 && clickZeroX) {
+            navClass.classList.add("bg");
+        }
+
+        if (window.scrollY < 8 && !clickZeroX) {
+            navClass.classList.remove("bg");
+
+        }
+    }, [clickZeroX])
+
+
+
     const changeBackground = () => {
-        if (window.scrollY >= 80) {
+        if (window.scrollY >= 8) {
             setNavBar(true)
         } else {
             setNavBar(false)
@@ -38,9 +54,9 @@ function NavigationBar() {
     return (
         <section className="navigation__bar-section" id="nav-bar">
 
-            <div className={navBar ? "navT bg" : "navT"} id="navT" onClick={() => setOpenNav(!openNav)}>
+            <div className={navBar ? "navT bg" : "navT"} id="navT" onClick={() => { setOpenNav(!openNav); setClickZeroX(!clickZeroX) }}>
                 <div className="icon"></div>
-                <img src={FacilizationLogo} alt="logo" className="navigation__bar-section-logo" />
+                <a href="/" style={{ margin: 'auto', height: '100%' }}><img src={FacilizationLogo} alt="logo" className="navigation__bar-section-logo" /></a>
             </div>
 
             <div id="menu">

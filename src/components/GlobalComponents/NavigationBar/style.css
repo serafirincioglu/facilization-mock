@@ -1,5 +1,6 @@
 .navigation__bar-section {
     z-index: 111;
+
 }
 
 .navigation__bar-section .bg {
@@ -13,16 +14,19 @@
     cursor: pointer;
     width: 100%;
     background: transparent;
-    height: 5rem;
+    height: 4rem;
     left: 0;
     top: 0;
     position: fixed;
     display: flex;
+    padding: 1rem 0;
+
+    /* margin-top: 80px; */
 }
 
 .navT img {
-    height: 60%;
-    padding: 0.1rem 0;
+    height: 100%;
+    width: 100%;
     margin: auto;
 }
 
@@ -30,16 +34,17 @@
     -webkit-transition: all 0.25s;
     position: absolute;
     width: 30px;
-    height: 1px;
+    height: 5px;
     left: 15px;
     top: 30px;
     background-color: white;
+    margin: 1rem 0;
 }
 .navT .icon:before,
 .navT .icon:after {
     -webkit-transition: all 0.25s;
     width: 30px;
-    height: 1px;
+    height: 5px;
     left: 0;
     background: white;
     position: absolute;
@@ -81,7 +86,7 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 65px;
+    top: 95px;
     font-size: 18px;
     font-family: sans-serif;
     font-weight: 100;
@@ -121,4 +126,14 @@
     width: 100%;
     background: #212121;
     border-bottom: 1px solid black;
+}
+
+@media screen and (max-width:595px) {
+    .navT img{
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
 }
