@@ -169,7 +169,7 @@ function NavigationBar() {
                     <li><Link to="/services" style={{ color: 'white' }}>Services</Link></li>
                     <li><Link to="/solutions" style={{ color: 'white' }}>Solutions</Link></li>
                     <li><Link to="/news" style={{ color: 'white' }}>News</Link></li>
-                    <li><Link to="/career" style={{ color: 'white' }}>Career</Link></li>
+                    <li><Link to="/" style={{ color: 'white' }}>Career</Link></li>
                     <li><Link to="/contact" style={{ color: 'white' }}>Contact</Link></li>
                 </ul>
             </div>

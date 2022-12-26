@@ -11,7 +11,7 @@ function Products() {
             <>
                 <TextBox title={<h2>F-Analytics Basel</h2>} text="F-Analytics is a successful line of applications developed by Facilization and currently used by some of the major banks in Albania and other financial institutions to address risks and compliance needs in the local banking market." />
 
-                <Grid container justifyContent="flex-start" alignItems="flex-start">
+                <Grid rowSpacing={4} columnSpacing={4} container justifyContent="flex-start" alignItems="flex-start" style={{ marginBottom: '8rem' }}>
                     <Grid item xs={12} sm={4}>
                         <TextBox title={<h2>F-Analytics IFRS9</h2>} text="F-Analytics Basel offers a complete solution that automates the…" image={logo} />
                     </Grid>
@@ -28,7 +28,7 @@ function Products() {
 
                 <TextBox title={<h2>Facili-Line</h2>} text="Our “Facili” product line, developed by Facilization and launched in May 2010, has been very successful. Currently licensed and implemented in some major banks in Albania and another bank in Tajikistan, these software packages include FaciliLegal, FaciliConnect and FaciliCom and have been successfully benefiting banking institutions in addressing various business units needs in the areas of legal, hard & soft collection, information and transaction processing with third parties, and massive communication in the local market." />
 
-                <Grid container justifyContent="flex-start" alignItems="flex-start">
+                <Grid container rowSpacing={4} columnSpacing={4} justifyContent="flex-start" alignItems="flex-start">
                     <Grid item xs={12} sm={4}>
                         <TextBox title={<h2>FaciliLegal</h2>} text="F-Analytics Basel offers a complete solution that automates the…" image={faciliLogo} />
                     </Grid>
