@@ -1,0 +1,25 @@
+.contact{
+    background-image: url("https://images.unsplash.com/photo-1568101552664-5464f2a937e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGFsYmFuaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60");
+    height: 100%;
+    min-height: 60vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2rem -3rem -5rem -3rem;
+    display: block;
+    background-size: cover;
+   
+}
+
+.contact .contact_form{
+    padding: 4rem;
+}
+
+.contact .contact_form h2{
+    text-align: left;
+    color: white;
+    font-weight: 700;
+    font-size: xx-large;
+    padding-left: 32px;
+    line-height: 4rem;
+}
+

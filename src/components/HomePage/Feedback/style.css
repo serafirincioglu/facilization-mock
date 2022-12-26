@@ -16,6 +16,7 @@
 .home__page-feedback h1 {
     color: black;
     margin: 4rem 0;
+    text-transform: capitalize;
 }
 
 .home__page-feedback .home__page-feedback-text {
@@ -26,6 +27,7 @@
 
 .home__page-feedback .home__page-feedback-logo {
     width: 100%;
+    max-width: 38rem;
     animation: updown 3s linear infinite;
 }
 

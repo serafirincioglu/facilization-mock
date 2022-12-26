@@ -40,6 +40,16 @@
     background-color: white;
     margin: 1rem 0;
 }
+
+.navT .profile-icon{
+    -webkit-transition: all 0.25s;
+    position: absolute;
+    width: 60px;
+    /* height: 100%; */
+    right: 15px;
+}
+
+
 .navT .icon:before,
 .navT .icon:after {
     -webkit-transition: all 0.25s;

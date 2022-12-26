@@ -8,10 +8,9 @@ function Mission() {
             <p>with you, we work with passion to create and operate technology solutions that facilitate your business success.</p>
             <p><strong>Vision</strong></p>
             <p>To become a leading European supplier of turnkey solutions for digital banks.</p>
-
         </article>
     )
-    return (<div><TextBox title="Mission" text={missionText} /></div>)
+    return (<TextBox title={<h2>Mission</h2>} text={missionText} />)
 }
 
 export default Mission

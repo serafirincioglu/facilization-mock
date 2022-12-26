@@ -3,13 +3,14 @@ import Services from '../../components/HomePage/Services/services';
 import Products from '../../components/HomePage/Products';
 import News from '../../components/HomePage/News';
 import Feedback from '../../components/HomePage/Feedback';
+import { bannerbg } from '../../assests/banner-bg.png';
 
 import './style.css';
 
 function HomePage() {
     return (
         <>
-            <img className="home__page-banner" src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGVza3RvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="home__banner" />
+            <img className="home__page-banner" src="https://images.unsplash.com/photo-1457364887197-9150188c107b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1400&q=60" alt="home__banner" />
             <Services />
             <div className="section-seperator" />
             <Products />

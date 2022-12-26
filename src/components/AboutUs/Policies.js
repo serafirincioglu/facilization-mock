@@ -2,7 +2,6 @@ import React from 'react'
 import TextBox from '../GlobalComponents/TextBox'
 
 function Policies() {
-
     let policiesText = (
         <article>
             <p>Facilization is committed to compliance with national and international data protection laws. Data protection is the foundation of trustworthy business relationships and the reputation of Facilization as an attractive employer.\nThese policies ensure an adequate level of data protection compliant to the European Union Data Protection Directive, the General Data Protection Regulation (GDPR), the Albanian national laws for Data Protection and the internationally accepted data privacy principles.</p>
@@ -11,10 +10,7 @@ function Policies() {
         </article>
     )
 
-
-    return (
-        <div><TextBox title="Policies" text={policiesText} /></div>
-    )
+    return (<TextBox title={<h2>Policies</h2>} text={policiesText} />)
 }
 
 export default Policies

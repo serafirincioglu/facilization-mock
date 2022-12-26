@@ -20,16 +20,9 @@ function AboutUsComponent() {
                 <li>ISO 9001:2015 for the delivery of “Software Development and Information Technology Services”</li>
                 <li>ISO 27001: 2013 for the delivery of “Information System Consulting, System Integration and Software Development Services”</li>
             </ul>
-
         </article>)
 
-
-
-    return (
-        <div>
-            <TextBox title="About Us" text={text1} />
-        </div>
-    )
+    return (<TextBox title={<h2>About Us</h2>} text={text1} />)
 }
 
 export default AboutUsComponent

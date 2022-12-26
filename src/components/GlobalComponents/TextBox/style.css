@@ -8,7 +8,7 @@
     word-wrap: break-word;
 }
 
-.text__box h2 {
+.text__box h2, h1, h3 {
     text-align: center;
     text-transform: uppercase;
 }
@@ -20,8 +20,6 @@
 @media (max-width: 450px) {
     .text__box {
         height: auto;
-        /* height: 200px; */
-        /* min-height: 100%; */
     }
 }
 
@@ -40,5 +38,18 @@
 @media (min-width: 950px) {
     .box {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .text__box{
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:1007px) {
+    .text__box{
+       
     }
 }

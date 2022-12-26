@@ -102,7 +102,6 @@ function AboutUs() {
     useEffect(() => {
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
-            console.log("dime: ", getWindowDimensions())
         }
 
         window.addEventListener('resize', handleResize);
@@ -112,38 +111,32 @@ function AboutUs() {
     return (
         <PageWrapper children={
             <div className="about_us_page-list">
-                <Box sx={{ width: '100%', bgcolor: 'transparent' }}>
 
-                    <StyledTabs
-                        value={value} onChange={handleChange} centered>
-                        <StyledTab label="About Us" {...a11yProps(0)} />
-                        <StyledTab label="Profile" {...a11yProps(1)} />
-                        <StyledTab label="Mission" {...a11yProps(2)} />
-                        <StyledTab label="Values" {...a11yProps(3)} />
-                        <StyledTab label="Policies" {...a11yProps(4)} />
+                <StyledTabs
+                    value={value} onChange={handleChange} centered>
+                    <StyledTab label="About Us" {...a11yProps(0)} />
+                    <StyledTab label="Profile" {...a11yProps(1)} />
+                    <StyledTab label="Mission" {...a11yProps(2)} />
+                    <StyledTab label="Values" {...a11yProps(3)} />
+                    <StyledTab label="Policies" {...a11yProps(4)} />
+                </StyledTabs>
 
-                    </StyledTabs>
-
-
-                    <TabPanel value={value} index={0}>
-                        <AboutUsTab />
-                    </TabPanel>
-                    <TabPanel value={value} index={1}>
-                        <Profile />
-                    </TabPanel>
-                    <TabPanel value={value} index={2}>
-                        <Mission />
-                    </TabPanel>
-                    <TabPanel value={value} index={3}>
-                        <Values />
-                    </TabPanel>
-                    <TabPanel value={value} index={4}>
-                        <Policies />
-                    </TabPanel>
-
-                </Box>
-            </ div>
-
+                <TabPanel value={value} index={0}>
+                    <AboutUsTab />
+                </TabPanel>
+                <TabPanel value={value} index={1}>
+                    <Profile />
+                </TabPanel>
+                <TabPanel value={value} index={2}>
+                    <Mission />
+                </TabPanel>
+                <TabPanel value={value} index={3}>
+                    <Values />
+                </TabPanel>
+                <TabPanel value={value} index={4}>
+                    <Policies />
+                </TabPanel>
+            </div>
         } />
     )
 }

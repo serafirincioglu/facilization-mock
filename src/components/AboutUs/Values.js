@@ -11,11 +11,7 @@ function Values() {
             <p><strong>Stay lean and hungry for innovation and success – </strong>We believe that there is always more to learn, a better alternative to solve problems, a new technology to enjoy learning. It’s always Day 1.</p>
         </article>
     )
-    return (
-        <div>
-            <TextBox title="Values" text={valuesText} />
-        </div>
-    )
+    return (<TextBox title={<h2>Values</h2>} text={valuesText} />)
 }
 
 export default Values

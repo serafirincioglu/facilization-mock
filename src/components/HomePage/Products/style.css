@@ -6,6 +6,7 @@
     text-align: center;
     margin: 0;
     padding: 4rem 0;
+    color: white;
 }
 
 .home__page-products {
@@ -13,12 +14,9 @@
     flex-direction: column;
     justify-content: center;
     padding-bottom: 4rem;
-    background: linear-gradient(
-        0deg,
-        rgba(189, 222, 220, 1) 0%,
-        rgba(255, 255, 255, 0) 1%,
-        rgba(255, 255, 255, 0) 1%,
-        rgba(255, 255, 255, 0) 12%,
-        rgba(172, 190, 189, 0.43) 100%
-    );
+    background-image: url("https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60");
+    background-attachment: fixed;
+    background-repeat: none;
+    background-position: center;
+    background-size: contain;
 }

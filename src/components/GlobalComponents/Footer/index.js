@@ -12,8 +12,8 @@ function Footer() {
         <footer className="home__page-footer">
             <Grid container rowSpacing={1} spacing={1} direction="row" justifyContent="center" alignItems="flex-start">
                 <Grid item xs={12} sm>
-                    <List alignItems="center">
-                        <ListItem>
+                    <List>
+                        <ListItem alignItems="center">
                             <h3>About Us</h3>
                         </ListItem>
                         {AboutUs.map((item, index) => {
@@ -24,10 +24,11 @@ function Footer() {
                     </List>
                 </Grid>
                 <Grid item xs={12} sm>
-                    <ListItem alignItems="flex-start">
-                        <h3>Our Products</h3>
-                    </ListItem>
                     <List>
+                        <ListItem alignItems="center">
+                            <h3>Our Products</h3>
+                        </ListItem>
+
                         {OurProducts.map((item, index) => {
                             return <ListItem key={index}>
                                 <a href={item.link}>{item.title}</a>
@@ -36,10 +37,11 @@ function Footer() {
                     </List>
                 </Grid>
                 <Grid item xs={12} sm>
-                    <ListItem alignItems="flex-start">
-                        <h3>Our Services</h3>
-                    </ListItem>
                     <List>
+                        <ListItem alignItems="center">
+                            <h3>Our Services</h3>
+                        </ListItem>
+
                         {OurServices.map((item, index) => {
                             return <ListItem key={index}>
                                 <a href={item.link}>{item.title}</a>
@@ -48,10 +50,12 @@ function Footer() {
                     </List>
                 </Grid>
                 <Grid item xs={12} sm>
-                    <ListItem alignItems="flex-start">
-                        <h3>Contact Us</h3>
-                    </ListItem>
                     <List>
+
+                        <ListItem alignItems="flex-start">
+                            <h3>Contact Us</h3>
+                        </ListItem>
+
                         <ListItem>
                             <p>Rr. Sami Frashëri, P.56,
                                 Kompleksi TID (qendra “Nobis”),

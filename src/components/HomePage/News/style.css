@@ -1,5 +1,5 @@
 .home__page-news {
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
     position: sticky;
     background: linear-gradient(
         180deg,
@@ -26,8 +26,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #ccc;
-    border: 4px solid;
+    color: white;
+    border: 2px solid;
     font-weight: bold;
     padding: 5px 10px;
 }
@@ -42,6 +42,7 @@
 .blog-card {
     padding: 30px;
     position: relative;
+    cursor: pointer;
 }
 
 .blog-card .date__box {
@@ -61,14 +62,17 @@
 
 .blog-card .blog-card__background {
     background: transparent;
+    width: 100%;
 }
 
 .blog-card .card__background--wrapper {
     height: 100%;
-    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 65%);
     position: relative;
     overflow: hidden;
     border-radius: calc(40 * 1px);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background: transparent;
+
 }
 
 .blog-card .card__background--main {
@@ -123,8 +127,7 @@
 }
 
 .blog-card:hover .blog-card__info {
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
-        rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 .news-background {

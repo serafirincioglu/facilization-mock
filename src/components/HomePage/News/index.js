@@ -2,6 +2,7 @@ import React from 'react'
 import data from './data';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import 'animate.css';
 import './style.css'
 
 function News() {
@@ -9,7 +10,7 @@ function News() {
         <section className="home__page-news" id="home__page-news">
             <h1>News</h1>
             <Box sx={{ width: 1 }}>
-                <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }}>
+                <Grid container rowSpacing={4} columnSpacing={{ xs: 4, sm: 4, md: 4 }} justifyContent="center" alignItems="stretch">
                     {
                         data.map((news, index) => {
                             return (

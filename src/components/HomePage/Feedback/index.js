@@ -25,7 +25,7 @@ function Feedback() {
                 <Grid item xs={12} sm={6}>
                     <h1 className="home__page-feedback-text">
                         Your opinion is important to us.
-                        <span />
+                        <br />
 
                         Please give us a feedback.
                     </h1>
